@@ -42,22 +42,17 @@ Updated: 2025-11-19 07:14:33
 }
 
 [data-header*="type-1"] .ct-header [data-row*="top"] {
-    --height: 0px;!important;
+    --height: 0px!important;
 }
 
 
 
 .searchandfilter input[type="submit"] {
     background-color: var(--theme-palette-color-4);
-    color: #fff;*/
+    color: #fff;
     padding: 10px 20px;
     border-radius: 3px;
     cursor: pointer;
-/*
- *     background: var(--theme-palette-color-5);
-    --theme-link-initial-color:  var(--theme-palette-color-4);
-    --theme-link-hover-color: var(--theme-palette-color-2);
-*/
 }
 
 /* Estilo cuando el mouse está sobre el botón */
