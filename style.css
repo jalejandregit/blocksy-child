@@ -1,0 +1,383 @@
+/*
+Theme Name: Blocksy Child
+Theme URI: https://creativethemes.com/blocksy/
+Template: blocksy
+Author: CreativeThemes
+Author URI: https://creativethemes.com
+Description: Blocksy is a fast, modern WordPress theme with advanced WooCommerce support and full compatibility with the block editor.
+Tags: accessibility-ready,blog,block-patterns,e-commerce,wide-blocks,block-styles,grid-layout,one-column,two-columns,three-columns,four-columns,right-sidebar,left-sidebar,translation-ready,custom-colors,custom-logo,custom-menu,featured-images,footer-widgets,full-width-template,theme-options,threaded-comments
+Version: 2.1.21.1763532873
+Updated: 2025-11-19 07:14:33
+*/
+
+/*
+.blockslider-pagination.blockslider-pagination-square span {
+	width: 45px;
+	margin: 5 10px !important;
+}
+*/
+
+
+:root {
+  --bg:#0e141d;
+  --card:#131c29;
+  --muted:#9aa6b2;
+  --text:#e6eef6;
+  --accent:#e5b567;
+  --radius:14px;
+  --sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  --theme-link-initial-color: var(--theme-palette-color-4)!important;
+  --theme-link-hover-color: var(--theme-palette-color-2)!important;
+}
+
+
+
+.entry-meta [data-type=pill] a {
+    min-height: 25px;
+    padding: 0 8px;
+    border-radius: 3px;
+    background: var(--theme-palette-color-5);
+    --theme-link-initial-color:  var(--theme-palette-color-4);
+    --theme-link-hover-color: var(--theme-palette-color-2);
+}
+
+[data-header*="type-1"] .ct-header [data-row*="top"] {
+    --height: 0px;!important;
+}
+
+
+
+.searchandfilter input[type="submit"] {
+    background-color: var(--theme-palette-color-4);
+    color: #fff;*/
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+/*
+ *     background: var(--theme-palette-color-5);
+    --theme-link-initial-color:  var(--theme-palette-color-4);
+    --theme-link-hover-color: var(--theme-palette-color-2);
+*/
+}
+
+/* Estilo cuando el mouse está sobre el botón */
+.searchandfilter input[type="submit"]:hover {
+  	background-color: var(--theme-icon-hover-color);
+	color: var(--theme-palette-color-2);
+	border: 2px solid var(--theme-palette-color-4); 
+	border-color:var(--theme-palette-color-4);
+}
+
+
+
+#main-container .site-main {
+    margin-top: 30px!important;
+}
+
+/* search filter */
+.searchandfilter ul li{
+    width: auto;
+    display: inline-block;
+}
+
+
+/*add media query so changes only affect tablet and desktop*/
+/*
+[data-header*="type-1"] {
+	--header-sticky-offset:0px!important;
+}
+*/
+
+[data-header*="type-1"] .ct-header [data-row*="middle"] {
+    --height: 70px!important;
+}
+
+[data-header*="type-1"] .ct-header [data-row*="bottom"] {
+	--height: 30px!important;
+	align-content:center!important;
+}
+
+@media (min-width:1800px) {
+[data-header*="type-1"] .ct-header [data-id="text"] {
+    min-width: 1281px!important;
+		align-content:center!important;
+	}
+}
+
+@media (min-width: 800px){
+[data-header*="type-1"] .ct-header [data-id="text"] {
+    min-width: 760px!important;
+		align-content:center!important;
+	}
+}
+
+@media (min-width:480px)  {
+	[data-header*="type-1"] .ct-header [data-id="text"] {
+    min-width: 440px!important;
+		align-content:center!important;
+	}
+}
+
+img {
+	height:260px;
+	width:200px;
+	  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.entry-card{
+box-shadow: 0px 2px 80px 0px rgba(160,190,212,0.22);  
+border-radius: 6px;
+padding: 5px;
+}
+.entry-title{
+	 min-height: 40px!important;
+}
+
+.orientacio>g>path[dades] {
+    fill: #d8e4b0;
+    transition: .1s;
+}
+.orientacio:not(.is-read-only)>g[dades] {
+    cursor: pointer;
+}
+.orientacio>g.orientacio-selected>path[dades] {
+    fill: #33b760;
+    transition: .1s;
+}
+.orientacio>g.orientacio-selected>text[dades] {
+    fill: #fff;
+    transition: .1s;
+}
+
+@media print {
+    .orientacio[dades] {
+    display: none;
+	}
+}
+/*
+div[dades]:before {
+    content: "Orientations : ";
+    font-weight: 700;
+}
+*/
+
+/* mostra orientacio
+div[dades]:after {
+    content: attr(title);
+}
+*/
+.missing-history-banner[datao] {
+    overflow: hidden;
+}
+.protection-area-info[datao] {
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+.automatic-gears[data] {
+    margin-bottom: 1.5rem;
+}
+/**/	
+@media print {
+    .protection-area-info[datao] {
+    margin: 0!important;
+    padding: 0!important;
+}
+}
+
+.fa-solid, .fas {
+    color: #21a319!important;
+}
+
+p.list-post-meta {
+    min-height: 50px!important;
+}
+
+.list-post-meta{
+	font-size: 14px!important;
+}
+table.table_dades {
+    font-size: 12px;
+}
+
+
+.tags-tp {
+  list-style: none;
+  margin: 0;
+  overflow: hidden; 
+  padding: 0;
+}
+
+.div-tag{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+	
+}
+.div-tag>ul>li>a {
+	  margin:4px;
+  display:inline-block;
+  color:white;
+  /*font-weight:bolder;*/
+  /*color:grey;*/
+  text-decoration:none;
+  /*font-family:Helvetica;*/
+  font-size: 1em;
+  font-weight: lighter;
+  vertical-align:top;
+  transition: color .2s ease;
+}
+
+.tags-tp li {
+  float: left; 
+	
+}
+
+/*
+:root {
+  --color-text: #FFF;
+  --color-front: #aaa197;
+  --color-back: #fbb040;
+  --header-height: 75px!important;
+  --height: 120px!important;
+  --shrink-height: 1px!important;
+}
+*/
+
+
+
+.div-tag>ul>li>a.tag-cube{
+  position:relative;
+  transform-style:preserve-3d;
+  /*perspective:600px;*/
+   background-color:#aaa197;
+  backface-visibility:hidden;
+  line-height:1.2em;
+  transform-origin:50% 50% -.6em;
+  transition:transform .3s ease;
+  width :32px;
+	height:15px;
+  border-radius: 5px;
+  text-align:center;
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--color-text);
+}
+
+.div-tag>ul>li>a.tag-cube:after{ 
+    content:attr(data-value);
+    background-color:#fcb900;
+    color:#222;
+    line-height:1.2em;
+    position:absolute;
+    left:0;
+	top:auto;
+      bottom:100%;
+      transform-origin:50% 100%;
+      transform:rotateX(90deg);
+	  width :50px;
+	   border-radius: 5px;
+	  width :32px;
+	height:15px;
+  } 
+
+ .tag-cube:hover{
+    transform:rotateX(-90deg);
+  }
+.div-tag>ul>li>a.tag-cube.selected{
+	background-color: #fcb900 !important;
+}
+
+
+.li-menu{
+    list-style-type:none;
+    position:relative;
+    width:120px;
+    }
+                
+.li-menu a{
+    text-decoration:none;
+    display:inline-block;
+    padding:5px 10px;
+    width:120px;
+    height:30px;
+    border:1px solid #000;
+    color:#fff;
+    background-color:#000;
+    }
+            
+.li-menu a:hover{
+    color:#000;
+    background-color:#fff;
+                
+    }
+    
+.li-menu ul{
+        display:none;
+        position:absolute;
+        top:0px;
+        left:120px;
+    }
+            
+.li-menu:hover ul{display:block;}
+
+[data-header*="type-1"] #search-modal {
+    background-color: rgb(157 145 95 / 47%)!important;
+}
+
+
+
+
+.light-theme{ --bg:#f7f8fa; --card:#ffffff; --muted:#62707a; --text:#10151c; }
+
+
+body.ct-container {
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--sans);
+  padding:48px 20px;
+  -webkit-font-smoothing:antialiased;
+}
+
+.meta-author{
+	display:none!important;
+}
+.meta-date{
+	display:none!important;
+}
+.page-description {
+	min-height:565px!important;
+	min-width:290px!important;
+}
+/* ocultem la categoría per defecte -> Etiqueta a les targetes*/
+.meta-categories a.ct-term-1 {
+    display: none;
+}
+/* ocultem la categoría per defecte -> Combo de categories Ubicació*/
+option.level-0 {
+    display: none;
+}
+
+/* ocultem la categoría per defecte */
+
+input[type="submit" i] {
+    text-align: center!important;
+	margin: 0px 0!important;
+}
+
+/*
+.entry-content.is-layout-constrained{
+	display:none!important;
+}
+
+[data-sticky], [data-sticky] [data-row], [data-sticky] [data-row*=boxed]>div {
+   background-color: aquamarine;
+}
+entry-content is-layout-flow
+ * capsalera html
+ * [tags-orientacio][searchandfilter fields="category,post_tag" submit_label ="Filtrar" search_placeholder="all,one" all_items_labels="Ubicació, Orientació" ]
+*/
+
+
+
+
